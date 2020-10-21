@@ -19,7 +19,7 @@ public class Reservation {
 
     @PostPersist
     public void onPostPersist(){
-        System.out.println("##### onPostPersist status = " + this.getStatus());
+        System.out.println("###### onPostPersist status = " + this.getStatus());
 
         // 차량 예약-> paymentRequest
         if(this.getStatus().equals("RESERVED")) {
